@@ -1,0 +1,36 @@
+<div class="container">
+  <app-sidebar></app-sidebar>
+  
+  <div class="main-area">
+    <app-header></app-header>
+
+    <section class="cards">
+      <div class="card">
+        <div class="card-title">Saldo</div>
+        <div class="card-value">{{ saldo }}</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Número de transações</div>
+        <div class="card-value">{{ numeroTransacoes }}</div>
+      </div>
+    </section>
+
+    <section class="wallets">
+      <h2>Carteiras</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Carteira 1</td>
+            <td>bdecb4a3 15d6c70 d0e8d8d2 51520c</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</div>

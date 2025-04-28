@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { PainelComponent } from './pagina-principal/Painel.component';
+import { PainelComponent } from './Pages/Painel.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,   // <- importantíssimo no standalone
-  imports: [RouterOutlet, PainelComponent],
+  standalone: true,
+  imports: [PainelComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'residencia-BB';
-}
+export class AppComponent {}
