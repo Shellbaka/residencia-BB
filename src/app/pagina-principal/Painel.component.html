@@ -1,0 +1,56 @@
+<div class="container">
+    <aside class="sidebar">
+      <div class="logo">BB CHAIN</div>
+      <nav class="menu">
+        <ul>
+          <li>Painel</li>
+          <li>Histórico de transações</li>
+          <li>Criar transação</li>
+          <li>Carteiras</li>
+          <li>UTXOs</li>
+          <li>Console</li>
+          <li>Configurações</li>
+        </ul>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="icon"></div>
+        <div class="icon"></div>
+      </div>
+    </aside>
+  
+    <main class="main-content">
+      <header class="header">
+        <h1>Painel</h1>
+      </header>
+  
+      <section class="cards">
+        <div class="card">
+          <div class="card-title">Saldo</div>
+          <div class="card-value" id="saldo">{{saldo}}</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Número de transações</div>
+          <div class="card-value" id="transacoes">{{numeroTransacoes}}</div>
+        </div>
+      </section>
+  
+      <section class="wallets">
+        <h2>Carteiras</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Endereço</th>
+            </tr>
+          </thead>
+          <tbody id="wallets-body">
+            <tr>
+              <td>Carteira 1</td>
+              <td>bdecb4a3 15d6c70 d0e8d8d2 51520c</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+  
