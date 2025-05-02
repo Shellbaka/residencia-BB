@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from '../Components/sidebar/sidebar.component';
-import { HeaderComponent } from '../Components/header/header.component';
-import { DashboardContentComponent } from '../Components/dashboard-content/dashboard-content.component';
-import { CommonModule } from '@angular/common';
+import { SidebarComponent } from '../../Components/sidebar/sidebar.component';
+import { HeaderComponent } from '../../Components/header/header.component';
+import { DashboardContentComponent } from '../../Components/dashboard-content/dashboard-content.component';
+import { CommonModule } from  '@angular/common';
 
 @Component({
   selector: 'app-painel',

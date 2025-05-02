@@ -1,0 +1,29 @@
+<div class="historico-container">
+    <h2>Histórico de Transações</h2>
+  
+    <div class="tabela-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let transacao of transacoes">
+            <td>{{ transacao.data | date }}</td>
+            <td>{{ transacao.descricao }}</td>
+            <td>{{ transacao.valor | currency:'BRL' }}</td>
+            <td>{{ transacao.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <div *ngIf="transacoes.length === 0" class="mensagem-vazia">
+        Nenhuma transação encontrada.
+      </div>
+    </div>
+  </div>
+  
