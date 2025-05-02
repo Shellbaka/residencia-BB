@@ -1,0 +1,27 @@
+.card-carteira {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .info-carteira h2 {
+    margin: 0;
+  }
+  
+  .acoes-carteira button {
+    margin-left: 10px;
+    background-color: #002776;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .acoes-carteira button:hover {
+    background-color: #0055aa;
+  }
+  

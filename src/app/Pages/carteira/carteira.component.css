@@ -1,0 +1,17 @@
+.container-carteiras {
+    padding: 20px;
+  }
+  
+  .header-carteiras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .lista-carteiras {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  

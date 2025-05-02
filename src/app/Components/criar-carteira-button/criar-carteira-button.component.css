@@ -1,0 +1,14 @@
+.botao-criar-carteira {
+    background-color: #FFD700;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .botao-criar-carteira:hover {
+    background-color: #FFC300;
+  }
+  

@@ -1,0 +1,15 @@
+<div class="container-carteiras">
+    <div class="header-carteiras">
+      <h1>Carteiras</h1>
+      <app-criar-carteira-button></app-criar-carteira-button>
+    </div>
+  
+    <div class="lista-carteiras">
+      <app-carteira-card
+        *ngFor="let carteira of carteiras"
+        [nome]="carteira.nome"
+        [saldo]="carteira.saldo">
+      </app-carteira-card>
+    </div>
+  </div>
+  
