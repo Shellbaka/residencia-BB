@@ -1,0 +1,58 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e8f0fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: 300px;
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .modal h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #003366;
+  }
+  
+  .modal p {
+    margin: 10px 0 20px;
+    color: #333;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .button-group button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 2px solid #003366;
+    color: #003366;
+    transition: all 0.3s ease;
+  }
+  
+  .button-group button:hover {
+    background-color: #003366;
+    color: white;
+  }
+  
+  .cancel {
+    background-color: #003366;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

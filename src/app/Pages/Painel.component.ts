@@ -1,33 +1,18 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from '../Components/sidebar/sidebar.component';
-import { HeaderComponent } from '../Components/header/header.component';
-import { DashboardContentComponent } from '../Components/dashboard-content/dashboard-content.component';
 import { CommonModule } from '@angular/common';
+import { DashboardContentComponent } from '../Components/dashboard-content/dashboard-content.component';
+import { HeaderComponent } from '../Components/header/header.component';
+import { SidebarComponent } from '../Components/sidebar/sidebar.component';
+import { RouterModule } from '@angular/router';
+import { ExportModalComponent } from '../Components/export-modal/export-modal.component';
+
 
 @Component({
   selector: 'app-painel',
   standalone: true,
-  imports: [CommonModule, SidebarComponent, HeaderComponent, DashboardContentComponent],
-  template: `
-    <div class="container">
-      <app-sidebar (selected)="onMenuChange($event)" />
-
-      <div class="main">
-        <app-header [title]="selectedSection" />
-        <app-dashboard-content *ngIf="selectedSection === 'Painel'" />
-      </div>
-    </div>
-  `,
-  styles: [`
-    .container {
-      display: flex;
-    }
-    .main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-  `]
+  imports: [CommonModule, DashboardContentComponent, HeaderComponent, SidebarComponent, ExportModalComponent,RouterModule],
+  templateUrl: './Painel.component.html',
+  styleUrls: ['./painel.component.css'],
 })
 export class PainelComponent {
   selectedSection = 'Painel';

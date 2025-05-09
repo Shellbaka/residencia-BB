@@ -1,0 +1,42 @@
+
+    <div class="container">
+      <h2>UTXOs</h2>
+  
+      <button (click)="openExportModal()" class="export-button">Exportar</button>
+      
+    
+      <div class="search-container">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Pesquisar..." class="search-input" />
+      </div>
+      
+      <table class="utxo-table">
+        <thead>
+          <tr>
+            <th>Transação</th>
+            <th>Índice</th>
+            <th>Valor</th>
+            <th>Endereço</th>
+            <th>Script</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let utxo of filteredUTXOs()">
+            <td>{{ utxo.txid }}</td>
+            <td>{{ utxo.index }}</td>
+            <td>{{ utxo.value }} BTC</td>
+            <td>{{ utxo.address }}</td>
+            <td>{{ utxo.script }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+   
+      <app-export-modal *ngIf="showExportModal"
+                        (close)="showExportModal = false"
+                        (export)="exportUTXOs($event)">
+      </app-export-modal>
+      
+      <router-outlet></router-outlet>
+    </div>
+
+  

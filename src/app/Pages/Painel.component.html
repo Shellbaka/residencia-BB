@@ -1,0 +1,9 @@
+<div class="container">
+    <app-sidebar (selected)="onMenuChange($event)" />
+
+    <div class="main">
+        <app-header [title]="selectedSection" />
+        <app-dashboard-content *ngIf="selectedSection === 'Painel'" />
+    </div>
+    <router-outlet></router-outlet> <!-- Mudança aqui, usando router-outlet -->c
+</div>

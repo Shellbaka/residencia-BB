@@ -1,0 +1,11 @@
+<!-- src/app/components/export-modal/export-modal.component.html -->
+<div class="modal">
+    <h3>Exportar UTXOs</h3>
+    <p>Escolha um formato para exportar a lista de UTXOs</p>
+    <div class="button-group">
+      <button (click)="exportData('csv')">CSV</button>
+      <button (click)="exportData('json')">JSON</button>
+    </div>
+    <button (click)="closeModal()" class="cancel">Cancelar</button>
+  </div>
+  
