@@ -10,7 +10,7 @@ import { ExportModalComponent } from '../Components/export-modal/export-modal.co
 @Component({
   selector: 'app-painel',
   standalone: true,
-  imports: [CommonModule, DashboardContentComponent, HeaderComponent, SidebarComponent, ExportModalComponent,RouterModule],
+  imports: [CommonModule, DashboardContentComponent, HeaderComponent, SidebarComponent,RouterModule],
   templateUrl: './Painel.component.html',
   styleUrls: ['./painel.component.css'],
 })
