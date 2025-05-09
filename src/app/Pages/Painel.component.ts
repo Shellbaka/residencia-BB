@@ -4,7 +4,6 @@ import { DashboardContentComponent } from '../Components/dashboard-content/dashb
 import { HeaderComponent } from '../Components/header/header.component';
 import { SidebarComponent } from '../Components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
-import { ExportModalComponent } from '../Components/export-modal/export-modal.component';
 
 
 @Component({
